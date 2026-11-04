@@ -1,0 +1,58 @@
+Preflight SQL confirmed; dedicated origin638299 product159270393, flags recorded. PublishedSDK 1.46.0.0
+HTTP 200 /contract/contract.Contract/GetContractDataById
+Deployed gRPC read PASS
+HTTP 200 /contract/contract.Contract/AddContract
+Created dedicated fixture 638768 regular
+HTTP 200 /contract/contract.Contract/UpdateContract
+cbs-partial-valid: PASS [OK] 
+HTTP 400 /contract/contract.Contract/UpdateContract
+effective-invalid: PASS [InvalidArgument] 
+HTTP 200 /contract/contract.Contract/UpdateContract
+omitted-preserves: PASS [OK] 
+HTTP 200 /contract/contract.Contract/UpdateContract
+explicit-zero: PASS [OK] 
+HTTP 400 /contract/contract.Contract/UpdateContract
+batch-invalid-no-partial-writes: PASS [InvalidArgument] 
+HTTP 200 /contract/contract.Contract/AddContract
+Created dedicated fixture 638769 mono-UF
+HTTP 200 /contract/contract.Contract/UpdateContract
+mono-UF-stored-adrem: PASS [OK] 
+HTTP 200 /contract/contract.Contract/UpdateContract
+mono-UF-zero-adrem: PASS [OK] 
+HTTP 200 /contract/contract.Contract/AddContract
+Created dedicated fixture 638770 mono-Municipal
+HTTP 200 /contract/contract.Contract/UpdateContract
+mono-Municipal-stored-adrem: PASS [OK] 
+HTTP 200 /contract/contract.Contract/UpdateContract
+mono-Municipal-zero-adrem: PASS [OK] 
+HTTP 200 /contract/contract.Contract/AddContract
+Created dedicated fixture 638771 mono-CBS
+HTTP 200 /contract/contract.Contract/UpdateContract
+mono-CBS-stored-adrem: PASS [OK] 
+HTTP 200 /contract/contract.Contract/UpdateContract
+mono-CBS-zero-adrem: PASS [OK] 
+HTTP 200 /contract/contract.Contract/UpdateContract
+CBS-I-restore: PASS [OK] 
+HTTP 400 /contract/contract.Contract/UpdateContract
+CBS-I-inherited-invalid: PASS [InvalidArgument] 
+HTTP 200 /contract/contract.Contract/UpdateContract
+CBS-I-explicit-zero-valid: PASS [OK] 
+HTTP 200 /contract/contract.Contract/UpdateContract
+CBS-Z-restore: PASS [OK] 
+HTTP 400 /contract/contract.Contract/UpdateContract
+CBS-Z-inherited-invalid: PASS [InvalidArgument] 
+HTTP 200 /contract/contract.Contract/UpdateContract
+CBS-Z-explicit-zero-valid: PASS [OK] 
+HTTP 200 /contract/contract.Contract/UpdateContract
+IBS-I-restore: PASS [OK] 
+HTTP 400 /contract/contract.Contract/UpdateContract
+IBS-I-inherited-invalid: PASS [InvalidArgument] 
+HTTP 200 /contract/contract.Contract/UpdateContract
+IBS-I-explicit-zero-valid: PASS [OK] 
+HTTP 200 /contract/contract.Contract/UpdateContract
+IBS-Z-restore: PASS [OK] 
+HTTP 400 /contract/contract.Contract/UpdateContract
+IBS-Z-inherited-invalid: PASS [InvalidArgument] 
+HTTP 200 /contract/contract.Contract/UpdateContract
+IBS-Z-explicit-zero-valid: PASS [OK] 
+Completed 23 cases, failures 0
